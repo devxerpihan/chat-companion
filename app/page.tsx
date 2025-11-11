@@ -1,4 +1,5 @@
 import BannerCarousel from './components/BannerCarousel';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -39,28 +40,74 @@ export default function Home() {
         <h2 className="text-lg font-bold text-black mb-3">New Recommendations</h2>
         <div className="flex gap-3 overflow-x-auto scrollbar-hide -mx-4 px-4">
           <div className="flex-shrink-0 w-20 text-center">
-            <div className="w-16 h-16 bg-gray-200 rounded-lg mb-2 mx-auto flex items-center justify-center">
-              <svg className="w-8 h-8 text-gray-400" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-              </svg>
+            <div className="w-16 h-16 rounded-lg mb-2 mx-auto relative overflow-hidden">
+              <Image 
+                src="/profile/8.webp" 
+                alt="Unknown" 
+                fill
+                className="object-cover"
+              />
+              <div className="absolute bottom-0 left-0 w-5 h-3 bg-blue-400 rounded-bl-lg rounded-tr flex items-center justify-center">
+                <div className="flex gap-0.5">
+                  <div className="w-0.5 h-1.5 bg-white rounded"></div>
+                  <div className="w-0.5 h-2 bg-white rounded"></div>
+                  <div className="w-0.5 h-1.5 bg-white rounded"></div>
+                </div>
+              </div>
             </div>
             <div className="text-xs text-black">Unknown</div>
           </div>
           <div className="flex-shrink-0 w-20 text-center">
-            <div className="w-16 h-16 bg-green-100 rounded-lg mb-2 mx-auto flex items-center justify-center">
-              <div className="w-12 h-12 bg-green-300 rounded"></div>
+            <div className="w-16 h-16 rounded-lg mb-2 mx-auto relative overflow-hidden">
+              <Image 
+                src="/profile/9.webp" 
+                alt="Cao Dong" 
+                fill
+                className="object-cover"
+              />
+              <div className="absolute bottom-0 left-0 w-5 h-3 bg-green-400 rounded-bl-lg rounded-tr flex items-center justify-center">
+                <div className="flex gap-0.5">
+                  <div className="w-0.5 h-1.5 bg-white rounded"></div>
+                  <div className="w-0.5 h-2 bg-white rounded"></div>
+                  <div className="w-0.5 h-1.5 bg-white rounded"></div>
+                </div>
+              </div>
             </div>
             <div className="text-xs text-black">Cao Dong</div>
           </div>
           <div className="flex-shrink-0 w-20 text-center">
-            <div className="w-16 h-16 bg-gray-200 rounded-lg mb-2 mx-auto flex items-center justify-center">
-              <div className="w-12 h-12 bg-gray-300 rounded"></div>
+            <div className="w-16 h-16 rounded-lg mb-2 mx-auto relative overflow-hidden">
+              <Image 
+                src="/profile/10.webp" 
+                alt="Xin Le" 
+                fill
+                className="object-cover"
+              />
+              <div className="absolute bottom-0 left-0 w-5 h-3 bg-yellow-400 rounded-bl-lg rounded-tr flex items-center justify-center">
+                <div className="flex gap-0.5">
+                  <div className="w-0.5 h-1.5 bg-white rounded"></div>
+                  <div className="w-0.5 h-2 bg-white rounded"></div>
+                  <div className="w-0.5 h-1.5 bg-white rounded"></div>
+                </div>
+              </div>
             </div>
             <div className="text-xs text-black">Xin Le</div>
           </div>
           <div className="flex-shrink-0 w-20 text-center">
-            <div className="w-16 h-16 bg-gray-200 rounded-lg mb-2 mx-auto flex items-center justify-center">
-              <div className="w-12 h-12 bg-gray-300 rounded"></div>
+            <div className="w-16 h-16 rounded-lg mb-2 mx-auto relative overflow-hidden">
+              <Image 
+                src="/profile/11.webp" 
+                alt="Bo Shi" 
+                fill
+                className="object-cover"
+              />
+              <div className="absolute bottom-0 left-0 w-5 h-3 bg-purple-400 rounded-bl-lg rounded-tr flex items-center justify-center">
+                <div className="flex gap-0.5">
+                  <div className="w-0.5 h-1.5 bg-white rounded"></div>
+                  <div className="w-0.5 h-2 bg-white rounded"></div>
+                  <div className="w-0.5 h-1.5 bg-white rounded"></div>
+                </div>
+              </div>
             </div>
             <div className="text-xs text-black">Bo Shi</div>
           </div>
@@ -87,10 +134,13 @@ export default function Home() {
         {/* Profile 1: Mu Chen */}
         <div className="bg-white rounded-lg p-3 shadow-sm border border-gray-100 flex items-start gap-3">
           <div className="relative flex-shrink-0">
-            <div className="w-16 h-16 bg-gray-200 rounded-lg flex items-center justify-center">
-              <svg className="w-10 h-10 text-gray-400" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-              </svg>
+            <div className="w-16 h-16 rounded-lg overflow-hidden relative">
+              <Image 
+                src="/profile/1.jpg" 
+                alt="Mu Chen" 
+                fill
+                className="object-cover"
+              />
             </div>
             <div className="absolute bottom-0 left-0 w-6 h-4 bg-blue-400 rounded-bl-lg rounded-tr flex items-center justify-center">
               <div className="flex gap-0.5">
@@ -115,7 +165,7 @@ export default function Home() {
               <span className="bg-pink-200 text-pink-700 text-xs px-2 py-0.5 rounded-full">Emotional Guide</span>
               <span className="bg-pink-200 text-pink-700 text-xs px-2 py-0.5 rounded-full">Quick Solve</span>
               <span className="bg-pink-200 text-pink-700 text-xs px-2 py-0.5 rounded-full">Mature & Experienced</span>
-              <span className="bg-pink-200 text-pink-700 text-xs px-2 py-0.5 rounded-full">Night Owl</span>
+              
             </div>
           </div>
           <div className="flex-shrink-0 flex items-center">
@@ -128,10 +178,13 @@ export default function Home() {
         {/* Profile 2: Lin Li */}
         <div className="bg-white rounded-lg p-3 shadow-sm border border-gray-100 flex items-start gap-3">
           <div className="relative flex-shrink-0">
-            <div className="w-16 h-16 bg-pink-100 rounded-lg flex items-center justify-center">
-              <svg className="w-10 h-10 text-pink-300" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-              </svg>
+            <div className="w-16 h-16 rounded-lg overflow-hidden relative">
+              <Image 
+                src="/profile/2.png" 
+                alt="Lin Li" 
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
           <div className="flex-1 min-w-0">
@@ -155,10 +208,13 @@ export default function Home() {
         {/* Profile 3: Zhang Wei */}
         <div className="bg-white rounded-lg p-3 shadow-sm border border-gray-100 flex items-start gap-3">
           <div className="relative flex-shrink-0">
-            <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center">
-              <svg className="w-10 h-10 text-blue-300" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-              </svg>
+            <div className="w-16 h-16 rounded-lg overflow-hidden relative">
+              <Image 
+                src="/profile/3.webp" 
+                alt="Zhang Wei" 
+                fill
+                className="object-cover"
+              />
             </div>
             <div className="absolute bottom-0 left-0 w-6 h-4 bg-green-400 rounded-bl-lg rounded-tr flex items-center justify-center">
               <div className="flex gap-0.5">
@@ -194,10 +250,13 @@ export default function Home() {
         {/* Profile 4: Wang Mei */}
         <div className="bg-white rounded-lg p-3 shadow-sm border border-gray-100 flex items-start gap-3">
           <div className="relative flex-shrink-0">
-            <div className="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center">
-              <svg className="w-10 h-10 text-purple-300" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-              </svg>
+            <div className="w-16 h-16 rounded-lg overflow-hidden relative">
+              <Image 
+                src="/profile/4.jpeg" 
+                alt="Wang Mei" 
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
           <div className="flex-1 min-w-0">
@@ -227,10 +286,13 @@ export default function Home() {
         {/* Profile 5: Liu Jun */}
         <div className="bg-white rounded-lg p-3 shadow-sm border border-gray-100 flex items-start gap-3">
           <div className="relative flex-shrink-0">
-            <div className="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center">
-              <svg className="w-10 h-10 text-green-300" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-              </svg>
+            <div className="w-16 h-16 rounded-lg overflow-hidden relative">
+              <Image 
+                src="/profile/5.jpeg" 
+                alt="Liu Jun" 
+                fill
+                className="object-cover"
+              />
             </div>
             <div className="absolute bottom-0 left-0 w-6 h-4 bg-yellow-400 rounded-bl-lg rounded-tr flex items-center justify-center">
               <div className="flex gap-0.5">
@@ -266,10 +328,13 @@ export default function Home() {
         {/* Profile 6: Chen Yu */}
         <div className="bg-white rounded-lg p-3 shadow-sm border border-gray-100 flex items-start gap-3">
           <div className="relative flex-shrink-0">
-            <div className="w-16 h-16 bg-yellow-100 rounded-lg flex items-center justify-center">
-              <svg className="w-10 h-10 text-yellow-300" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-              </svg>
+            <div className="w-16 h-16 rounded-lg overflow-hidden relative">
+              <Image 
+                src="/profile/6.png" 
+                alt="Chen Yu" 
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
           <div className="flex-1 min-w-0">
